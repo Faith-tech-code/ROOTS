@@ -506,6 +506,12 @@ footer {
     margin: 0.5rem 0;
 }
 
+.product-item p {
+    flex-grow: 1;
+    margin-bottom: 1.5rem;
+    padding: 0 1rem;
+}
+
 .featured-maker {
     display: flex;
     gap: 2rem;
@@ -519,6 +525,68 @@ footer {
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid #D4AF37;
+}
+
+.featured-product-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    text-align: center;
+    padding: 1.5rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.featured-product-card img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+.featured-product-card h3 {
+    margin: 0.5rem 0;
+}
+
+.product-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0.5rem 0;
+}
+
+.product-impact {
+    background: #f0f8ff; /* AliceBlue */
+    border-left: 4px solid #1E5631;
+    padding: 0.75rem;
+    margin: 1rem 0;
+    font-size: 0.9rem;
+    text-align: left;
+    flex-grow: 1;
+}
+
+.maker-photos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.maker-photos-grid img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.featured-profile {
+    max-width: 800px;
+    margin: 1rem auto 2rem auto;
+    font-style: italic;
 }
 
 .contact-methods {
@@ -609,4 +677,93 @@ footer {
 .other-contact-info p {
     line-height: 1.8;
 }
+.faq-container {
+    max-width: 800px;
+    margin: 2rem auto 0 auto;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.faq-item {
+    background: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 5px solid #D4AF37; /* Gold */
+}
+
+.faq-item h4 { margin-top: 0; }
+
+.impact-guide {
+    max-width: 800px;
+    margin: 2rem auto;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.impact-item {
+    background: #f9f9f9;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    border-left: 5px solid #1E5631; /* Deep Green */
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.impact-amount {
+    font-weight: bold;
+    color: #1E5631; /* Deep Green */
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+
+.donation-form-embed {
+    margin-top: 2rem;
+    padding: 2rem;
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    background: #f9f9f9;
+}
+
+.ways-to-help-list {
+    text-align: left;
+    max-width: 700px;
+    margin: 1rem auto 2rem auto;
+}
+
+.get-involved-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+}
+
+.get-involved-grid .content-section {
+    margin-bottom: 0; /* Remove bottom margin since the grid has a gap */
+    display: flex;
+    flex-direction: column;
+}
+
+.volunteer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem auto;
+    max-width: 1000px;
+}
+
+.volunteer-role {
+    background: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.volunteer-role h4 { margin-top: 0; }
+.volunteer-role p { flex-grow: 1; }
+
 }
