@@ -465,18 +465,16 @@ footer {
 }
 
 .donation-options-scroller {
-    overflow-x: auto;
     padding: 1rem 0;
 }
 
 .donation-options-flex {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    min-width: max-content;
 }
 
 .donation-option {
-    flex: 0 0 250px;
     background: #f8f9fa;
     border: 2px solid #e9ecef;
     border-radius: 8px;
@@ -723,11 +721,7 @@ footer {
     }
     
     .donation-options-flex {
-        flex-direction: column;
-    }
-    
-    .donation-option {
-        flex: none;
+        grid-template-columns: 1fr;
     }
     
     .checkbox-grid {
