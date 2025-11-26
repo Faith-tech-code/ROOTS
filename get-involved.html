@@ -37,7 +37,7 @@
             <p>We are 100% transparent. Your donation goes directly to the front lines where it has a direct and immediate impact.</p>
             
             <div class="donation-form-container">
-                <form class="donation-form">
+                <form action="https://formspree.io/f/myzaqadb" method="POST" class="donation-form">
                     <div class="form-section">
                         <h4>Choose an Amount (UGX)</h4>
                         <div class="donation-options-scroller">
@@ -122,7 +122,26 @@
                     <li><strong>Counselors & Therapists:</strong> (For our wellness programs)</li>
                     <li><strong>Photographers/Videographers:</strong> (To help tell our story)</li>
                 </ul>
-                <a href="contact.html" class="cta-secondary">FILL OUT OUR VOLUNTEER FORM</a>
+                
+                <form action="https://formspree.io/f/myzaqadb" method="POST" class="volunteer-form">
+                    <label for="volunteer-name">Full Name</label>
+                    <input type="text" id="volunteer-name" name="name" required>
+
+                    <label for="volunteer-email">Email Address</label>
+                    <input type="email" id="volunteer-email" name="email" required>
+
+                    <label for="volunteer-expertise">Area of Expertise</label>
+                    <select id="volunteer-expertise" name="expertise" required>
+                        <option value="" disabled selected>Select your skill...</option>
+                        <option value="Business Mentor">Business Mentor</option>
+                        <option value="Legal Professional">Legal Professional</option>
+                        <option value="Counselor/Therapist">Counselor / Therapist</option>
+                        <option value="Photographer/Videographer">Photographer / Videographer</option>
+                        <option value="Other">Other</option>
+                    </select>
+
+                    <button type="submit" class="cta-secondary">SUBMIT APPLICATION</button>
+                </form>
             </section>
         </div>
     </main>
