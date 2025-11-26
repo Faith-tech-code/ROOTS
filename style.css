@@ -713,6 +713,32 @@ footer {
     color: #1B5E20;
 }
 
+/* Volunteer Form Toggle */
+#show-volunteer-form {
+    margin: 1.5rem 0;
+    display: block;
+    width: fit-content;
+}
+
+.volunteer-form {
+    transition: all 0.3s ease;
+}
+
+.volunteer-form.show {
+    animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .get-involved-grid {
