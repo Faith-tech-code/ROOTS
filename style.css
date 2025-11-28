@@ -442,10 +442,10 @@ footer {
 }
 
 /* Placeholder background images for program cards */
-#program-card-1 { background-image: url('https://via.placeholder.com/400x500.png?text=Youth+Education'); }
-#program-card-2 { background-image: url('https://via.placeholder.com/400x500.png?text=Fathers+Group'); }
-#program-card-3 { background-image: url('https://via.placeholder.com/400x500.png?text=Women+Working'); }
-#program-card-4 { background-image: url('https://via.placeholder.com/400x500.png?text=Community+Center'); }
+#program-card-1 { background-image: url('https://placeholder.com/400x500.png?text=Youth+Education'); }
+#program-card-2 { background-image: url('https://placeholder.com/400x500.png?text=Fathers+Group'); }
+#program-card-3 { background-image: url('https://placeholder.com/400x500.png?text=Women+Working'); }
+#program-card-4 { background-image: url('https://placeholder.com/400x500.png?text=Community+Center'); }
 
 /* --- Get Involved Page Styles --- */
 
